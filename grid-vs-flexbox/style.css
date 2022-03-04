@@ -16,7 +16,9 @@ body {
   padding: 40px 0;
   width: 90%;
 
-
+  /* Flexbox */
+  display: flex;
+  gap: 20px;
 }
 
 .titulo {
@@ -24,7 +26,13 @@ body {
   padding: 20px 0;
 }
 
-.contenedor-conciertos {}
+.contenedor-conciertos {
+  /* Flexbox */
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
 .card {
   background-position: center center;
@@ -36,13 +44,18 @@ body {
   padding: 20px;
   position: relative;
 
-
+  /* Flexbox */
+  /* width: 33.33%; */
+  width: calc(33.33% - 20px);
 }
 
 .card .textos {
   height: 100%;
 
-
+  /* Flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .banner {
@@ -52,7 +65,11 @@ body {
   padding: 20px;
   text-align: center;
 
-
+  /* Flexbox */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .banner ul {
