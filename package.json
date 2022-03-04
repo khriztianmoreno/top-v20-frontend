@@ -1,0 +1,23 @@
+{
+  "name": "top-v20-frontend",
+  "version": "1.0.0",
+  "description": "Frontend",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch base.scss dist/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khriztianmoreno/top-v20-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khriztianmoreno/top-v20-frontend/issues"
+  },
+  "homepage": "https://github.com/khriztianmoreno/top-v20-frontend#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

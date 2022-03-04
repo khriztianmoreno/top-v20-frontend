@@ -1,0 +1,33 @@
+@import "item";
+
+// First Example
+.grid {
+  display: grid;
+}
+
+// Second Example
+// $minWidht: 15rem;
+
+// .grid {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax($minWidht, 1fr));
+//   // gap: 2rem;
+// }
+
+// Third Example
+// $minWidht: 15rem;
+// $gridGap: 2rem;
+
+// .grid {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax($minWidht, 1fr));
+//   gap: $gridGap;
+
+//   & + .grid {
+//     margin-top: $gridGap;
+//   }
+// }
+
+// .grid-wrap {
+//   padding: $gridGap;
+// }

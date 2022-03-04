@@ -1,0 +1,22 @@
+.menu .item {
+  color: #00bcd4;
+}
+
+.menu .item:hover {
+  color: #fff;
+  background-color: #00bcd4;
+}
+
+.menu .item:disabled {
+  color: #b3b3b3;
+}
+
+.menu a {
+  color: #00bcd4;
+}
+
+.menu a:hover {
+  color: #fff;
+  background-color: #00bcd4;
+}
+/*# sourceMappingURL=base.css.map */

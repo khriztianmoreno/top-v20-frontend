@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1D202B;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+  margin: auto;
+  max-width: 1200px;
+  padding: 40px 0;
+  width: 90%;
+
+
+}
+
+.titulo {
+  font-size: 24px;
+  padding: 20px 0;
+}
+
+.contenedor-conciertos {}
+
+.card {
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+  font-weight: bold;
+  min-height: 200px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+
+
+}
+
+.card .textos {
+  height: 100%;
+
+
+}
+
+.banner {
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+
+
+}
+
+.banner ul {
+  list-style: none;
+}
+
+.banner ul li {
+  margin: 15px;
+  font-weight: bold;
+}
+
+.banner .boton {
+  background: #FFD600;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 600px) {}
