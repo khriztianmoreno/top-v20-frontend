@@ -1,7 +1,7 @@
 .App {
   align-items: center;
-  background: rgb(36, 40, 47);
-  display: flex;
+  /* background: rgb(36, 40, 47); */
+  /* display: flex; */
   justify-content: center;
   min-height: calc(50vh - 60px);
   padding: 4.5rem 0px;
@@ -10,7 +10,7 @@
 
 .showcase {
   align-items: center;
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1920px;
