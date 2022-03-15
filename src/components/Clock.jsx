@@ -1,17 +1,20 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
 
-const Clock = (props) => {
+function Clock() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
 
   setInterval(() => {
     setTime(new Date().toLocaleTimeString());
-  }, 5000)
+  }, 5000);
 
-  return(
+  return (
     <div>
-     <h1>La hora es: {time}</h1>
+      <h1>
+        La hora es:
+        {time}
+      </h1>
     </div>
-  )
+  );
 }
 
-export default Clock
+export default Clock;
