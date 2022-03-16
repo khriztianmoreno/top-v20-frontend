@@ -1,15 +1,18 @@
+import PropTypes from 'prop-types';
 
-import React from 'react'
-
-const OnionHater = (props) => {
+function OnionHater(props) {
   const { onHandleChange } = props;
 
   // JSX
-  return(
+  return (
     <div>
       <textarea name="description" id="" cols="30" rows="10" onChange={onHandleChange} />
     </div>
-  )
+  );
 }
 
-export default OnionHater
+OnionHater.propTypes = {
+  onHandleChange: PropTypes.func.isRequired,
+};
+
+export default OnionHater;

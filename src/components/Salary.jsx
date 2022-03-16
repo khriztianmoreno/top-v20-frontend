@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
-const Salary = () => {
+function Salary() {
   const [salary, setSalary] = useState(0);
-  const [form, setForm] = useState({})
+  const [form, setForm] = useState({});
 
   const handleChange = (evt) => {
     // const value = evt.target.value;
@@ -11,30 +11,33 @@ const Salary = () => {
 
     setForm({
       ...form,
-      [name]: value
-    })
-  }
+      [name]: value,
+    });
+  };
 
   const handleCalculate = () => {
     setSalary(form.hours * form.rate);
-  }
+  };
 
-  return(
+  return (
     <div>
       <h1>Salario</h1>
       <div>
-        <input type="number" name="hours" placeholder='Enter hours' onChange={handleChange} />
-        <input type="number" name="rate" placeholder='Enter Rate by hour' onChange={handleChange} />
-        <input type="number" name="tax" placeholder='Enter tax' onChange={handleChange} />
+        <input type="number" name="hours" placeholder="Enter hours" onChange={handleChange} />
+        <input type="number" name="rate" placeholder="Enter Rate by hour" onChange={handleChange} />
+        <input type="number" name="tax" placeholder="Enter tax" onChange={handleChange} />
 
-        <button onClick={handleCalculate}>Calculate</button>
+        <button type="button" onClick={handleCalculate}>Calculate</button>
       </div>
 
       <div>
-        <h2>Salary: {salary}</h2>
+        <h2>
+          Salary:
+          {salary}
+        </h2>
       </div>
     </div>
-  )
+  );
 }
 
-export default Salary
+export default Salary;

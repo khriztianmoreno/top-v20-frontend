@@ -1,8 +1,11 @@
+import PropTypes from 'prop-types';
 
-// TODOS los componentes deben returnar un elemento (tag, null, etc)
-
-function Title({titulo}) {
-  return <h1>{titulo}</h1>
+function Title({ titulo }) {
+  return <h1>{titulo}</h1>;
 }
+
+Title.propTypes = {
+  titulo: PropTypes.string.isRequired,
+};
 
 export default Title;

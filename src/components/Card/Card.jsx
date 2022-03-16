@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import './card.styles.scss'
+import './card.styles.scss';
 
-const Card = (props) => {
-  const { character } = props
+function Card(props) {
+  const { character } = props;
+
   return (
     <article className="characterCard__Wrapper">
       <div className="characterCard__ImgWrapper">
@@ -15,7 +17,7 @@ const Card = (props) => {
             <h2>{character.name}</h2>
           </a>
           <span className="status">
-            <span className="status__icon"></span>
+            <span className="status__icon" />
             Alive - Alien
           </span>
         </div>
@@ -33,7 +35,21 @@ const Card = (props) => {
         </div>
       </div>
     </article>
-  )
+  );
 }
 
-export default Card
+Card.propTypes = {
+  character: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string,
+  }),
+};
+
+Card.defaultProps = {
+  character: {
+    name: '',
+    image: '',
+  },
+};
+
+export default Card;
