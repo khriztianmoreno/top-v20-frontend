@@ -1,3 +1,4 @@
+/* eslint-disable */
 import jobService from '../../../services/job';
 
 function Form() {
