@@ -1,57 +1,26 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  NavLink,
-} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
-import HomePage from './pages/Home';
-import AboutPage from './pages/About';
-import InvoicePage from './pages/Invoice';
-
-import './App.css';
+import Home from './pages/Home';
+import Login from './pages/Sign/Login';
+import Register from './pages/Sign/Register';
+import Candidates from './pages/Candidates';
+import AddJob from './pages/Jobs/Create';
+import ApplyJob from './pages/Jobs/Apply';
+import DetailJob from './pages/Jobs/Detail';
+import BrowseJobs from './pages/Jobs';
 
 function App() {
   return (
-    <BrowserRouter>
-      <nav>
-        <ul>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/news">News</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
-          </li>
-          <li>
-            <NavLink to="/register">Register</NavLink>
-          </li>
-        </ul>
-      </nav>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/auth/login" element={<AboutPage />} />
-        <Route path="/auth/register" element={<AboutPage />} />
-        <Route path="/invoices/:slug/" element={<InvoicePage />} />
-
-        {/* Not Found */}
-        <Route
-          path="*"
-          element={(
-            <main style={{ padding: '1rem' }}>
-              <p>There is nothing here!</p>
-            </main>
-            )}
-        />
-
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/jobs" element={<BrowseJobs />} />
+      <Route path="/jobs/create" element={<AddJob />} />
+      <Route path="/jobs/detail/:id" element={<DetailJob />} />
+      <Route path="/jobs/apply/:id" element={<ApplyJob />} />
+      <Route path="/candidates" element={<Candidates />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+    </Routes>
   );
 }
 
