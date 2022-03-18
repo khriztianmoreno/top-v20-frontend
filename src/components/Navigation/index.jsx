@@ -1,20 +1,12 @@
 import { Link } from 'react-router-dom';
-import { faBars } from '@fortawesome/fontawesome-free-solid';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-// eslint-disable-next-line camelcase
-import jwt_decode from 'jwt-decode';
 
 function Navigation() {
-  const token = localStorage.getItem('token');
-  const decoded = jwt_decode(token);
-
   return (
     <nav className="navbar">
       <div className="container">
         <div className="pull-left">
           <Link className="navbar-toggle" to="/" data-toggle="offcanvas">
-            <FontAwesomeIcon icon={faBars} />
+            MENU
           </Link>
           <div className="logo-wrapper">
             <Link className="logo" to="/">
@@ -26,15 +18,9 @@ function Navigation() {
           </div>
         </div>
         <div className="pull-right user-login">
-          {decoded ? (
-            <div className="btn btn-sm btn-primary">
-              <span>{decoded.fullname}</span>
-            </div>
-          ) : (
-            <Link to="/login" className="btn btn-sm btn-primary">
-              login
-            </Link>
-          )}
+          <Link to="/login" className="btn btn-sm btn-primary">
+            login
+          </Link>
           or
           <Link to="/register"> register</Link>
         </div>
