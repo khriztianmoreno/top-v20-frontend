@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faLock } from '@fortawesome/fontawesome-free-solid';
 
 import useForm from '../../../hooks/useForm';
 import authService from '../../../services/auth';
@@ -42,7 +40,7 @@ function Login() {
             <div className="form-group">
               <div className="input-group">
                 <span className="input-group-addon">
-                  <FontAwesomeIcon icon={faEnvelope} size="1x" />
+                  ICON
                 </span>
                 <input
                   name="email"
@@ -59,7 +57,7 @@ function Login() {
             <div className="form-group">
               <div className="input-group">
                 <span className="input-group-addon">
-                  <FontAwesomeIcon icon={faLock} size="1x" />
+                  ICON
                 </span>
                 <input
                   name="password"

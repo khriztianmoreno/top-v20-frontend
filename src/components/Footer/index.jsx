@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 function Footer() {
   return (
     <footer className="site-footer">
@@ -78,22 +76,22 @@ function Footer() {
             <ul className="social-icons">
               <li>
                 <a className="facebook" href="https://fb.com/khriztianmoreno">
-                  <FontAwesomeIcon icon={['fab', 'facebook']} size="1x" />
+                  facebook
                 </a>
               </li>
               <li>
                 <a className="twitter" href="https://twitter.com/khriztianmoreno">
-                  <FontAwesomeIcon icon={['fab', 'twitter']} size="1x" />
+                  twitter
                 </a>
               </li>
               <li>
                 <a className="dribbble" href="https://github.com/khriztianmoreno">
-                  <FontAwesomeIcon icon={['fab', 'github']} size="1x" />
+                  github
                 </a>
               </li>
               <li>
                 <a className="linkedin" href="/">
-                  <FontAwesomeIcon icon={['fab', 'linkedin']} size="1x" />
+                  linkedin
                 </a>
               </li>
               <li>
@@ -101,7 +99,7 @@ function Footer() {
                   className="instagram"
                   href="https://instagram.com/khriztianmoreno"
                 >
-                  <FontAwesomeIcon icon={['fab', 'instagram']} size="1x" />
+                  instagram
                 </a>
               </li>
             </ul>

@@ -1,10 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faEnvelope,
-  faLock,
-  faUser,
-} from '@fortawesome/fontawesome-free-solid';
-
 import useForm from '../../../../hooks/useForm';
 
 function FormRegister() {
@@ -15,7 +8,7 @@ function FormRegister() {
       <div className="form-group">
         <div className="input-group">
           <span className="input-group-addon">
-            <FontAwesomeIcon icon={faUser} size="1x" />
+            USER
           </span>
           <input
             name="name"
@@ -35,7 +28,7 @@ function FormRegister() {
       <div className="form-group">
         <div className="input-group">
           <span className="input-group-addon">
-            <FontAwesomeIcon icon={faEnvelope} size="1x" />
+            ICON
           </span>
           <input
             name="email"
@@ -55,7 +48,7 @@ function FormRegister() {
       <div className="form-group">
         <div className="input-group">
           <span className="input-group-addon">
-            <FontAwesomeIcon icon={faLock} size="1x" />
+            ICON
           </span>
           <input
             name="password"
