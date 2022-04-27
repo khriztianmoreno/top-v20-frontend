@@ -14,10 +14,11 @@ const loginAccount = ({ email, password }) => {
 
 // const registerAccount = (user) => {};
 
-// const forgotPassword = (email) => {};
+const activeAccount = (token) => fetch(`${URL_BASE}/auth/local/verify-account/${token}`);
 
 const auth = {
   loginAccount,
+  activeAccount,
   // registerAccount,
   // forgotPassword,
 };

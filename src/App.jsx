@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
@@ -8,6 +9,9 @@ import AddJob from './pages/Jobs/Create';
 import ApplyJob from './pages/Jobs/Apply';
 import DetailJob from './pages/Jobs/Detail';
 import BrowseJobs from './pages/Jobs';
+import Tasks from './pages/Tasks';
+
+import Activate from './pages/Activate';
 
 function App() {
   return (
@@ -20,6 +24,8 @@ function App() {
       <Route path="/candidates" element={<Candidates />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/tasks" element={<Tasks />} />
+      <Route path="/activte/:token" element={<Activate />} />
     </Routes>
   );
 }
